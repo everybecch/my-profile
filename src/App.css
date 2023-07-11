@@ -88,3 +88,32 @@ li {
   flex-direction: column;
   align-items: center;
 }
+
+/* Responsivo para dispositivos móveis */
+
+@media (max-width: 600px) {
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .App-header {
+    padding: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .menu-options {
+    flex-direction: column;
+  }
+
+  .menu-options button {
+    margin-bottom: 10px;
+  }
+}
