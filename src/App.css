@@ -3,16 +3,13 @@
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 .App-header {
   background-color: #333;
-  padding: 10px;
+  padding: 20px;
   color: #fff;
   position: relative;
-  font-size: 24px;
 }
 
 h1 {
@@ -20,10 +17,8 @@ h1 {
 }
 
 .profile-picture {
-  width: 30vw;
-  height: 30vw;
-  max-width: 200px;
-  max-height: 200px;
+  width: 200px; /* Ajuste o tamanho da largura conforme necessário */
+  height: 200px; /* Ajuste o tamanho da altura conforme necessário */
   border-radius: 50%;
   position: absolute;
   top: 10px;
@@ -36,7 +31,7 @@ main {
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 h2 {
