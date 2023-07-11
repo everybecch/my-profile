@@ -1,38 +1,90 @@
+/* App.css */
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: Arial, sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+}
+
+.profile-picture {
+  width: 200px; /* Ajuste o tamanho da largura conforme necessário */
+  height: 200px; /* Ajuste o tamanho da altura conforme necessário */
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  transform: translateX(5%);
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.menu {
+  margin-top: 40px;
+}
+
+.menu-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-options button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-options button:hover {
+  background-color: #555;
+}
+
+/* textos */
+
+.sobre-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-text {
+  white-space: pre-line;
+}
+
+.content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
