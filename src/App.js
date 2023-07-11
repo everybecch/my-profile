@@ -11,9 +11,9 @@ const skills = [
 ];
 
 const images = [
-  '../every.jpg',
-  '../every3.jpg',
-  '../every4.jpg'
+  'every.jpg',
+  'every3.jpg',
+  'every4.jpg'
 ];
 
 function App() {
