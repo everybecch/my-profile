@@ -105,8 +105,8 @@ li {
     padding: 10px;
   }
 
-  main {
-    padding: 10px;
+  h1 {
+    font-size: 24px;
   }
 
   .menu-options {
@@ -115,5 +115,6 @@ li {
 
   .menu-options button {
     margin-bottom: 10px;
+    font-size: 14px;
   }
 }
