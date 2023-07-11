@@ -19,9 +19,9 @@ const skills = [
 
 
 const images = [
-  'my-profile/every.jpg',
-  'my-profile/every3.jpg',
-  'my-profile/every4.jpg'
+  'every.jpg',
+  'every3.jpg',
+  'every4.jpg'
 ];
 
 const headerVariants = {
@@ -169,19 +169,19 @@ function App() {
           className="sobre-text"
           style={{ fontFamily: 'Arial', fontSize: '16px', textAlign: 'center' }}
         >
-          Everton Santos, reside na cidade de São Paulo especificamente na zona leste de São Paulo em Itaquera
-          começou sua carreira na tecnologia no ano de 2014<br></br> onde já prestava serviço corrigindo
+          Everton Santos, reside na cidade de São Paulo especificamente na zona leste em Itaquera,
+          começou sua carreira na tecnologia no ano de 2014<br></br> onde já prestava serviços, corrigindo
           e reparando Hardwares e Software, ao longo do tempo foi obtendo experiencia profissional<br></br>
           e passando para outras areas da tecnologia como, anaslista de suporte,
           analista de sistemas, segurança da informação,<br></br> analista de infraestrutura e redes,
-          nesse tempo certificou-se em linux sistema operacional completo, certificou-se em programação<br></br> php com a udemy
-          até que um dia despertou interesse na area da programação e desenvolvimento onde se destacou desenvolvimendo<br></br>
-          seu primeiro projeto de sucesso na carreira, um sistema de telecom discagem automatica a partir dai iniciou-se<br></br>
-          uma paixão pela criação e pelo mundo dev, como ja havia conhecimento em sistemas e cloud, se tornou um devops
-          ao todo sua carreira<br></br> soma 9 anos sendo 4 anos dedicado ao desenvolvimento.
+          nesse meio tempo certificou-se em linux, sistema operacional completo, em programação web<br></br> php com a udemy,
+          até que um dia despertou interesse na area da programação e desenvolvimento onde se destacou desenvolvendo<br></br>
+          seu primeiro projeto de sucesso na carreira, um sistema de "telecom discagem automatica", a partir disso iniciou-se<br></br>
+          uma paixão pela criação e pelo mundo Dev, como ja havia conhecimento em sistemas e cloud, se tornou um DevOps.
+          Ao todo sua carreira<br></br> soma 9 anos sendo 4 anos dedicado ao desenvolvimento.
 
-          Esse é um pedaço da minha história. agradeço pela leitura,<br></br> e conto com voce para continuar
-          contruindo as paginas do meu livro afinal todos nós que amamos tecnologia<br></br> somos aventureiros e não paramos no tempo, nós andamos junto ao tempo da tecnologia
+          Esse é um pedaço da minha história. Agradeço pela leitura<br></br> e conto com voce para continuar
+          contruindo as paginas do meu livro.
           <br></br>
           <br></br><h3>English.</h3>
 
