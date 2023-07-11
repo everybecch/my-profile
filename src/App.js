@@ -6,6 +6,16 @@ const experiences = [
   // Experiências profissionais
 ];
 
+const methodologies = [
+  '/my-profile/assets/methodology1.png',
+  '/my-profile/assets/methodology2.png',
+  '/my-profile/assets/methodology3.png',
+  '/my-profile/assets/methodology4.png',
+  '/my-profile/assets/methodology5.png',
+  '/my-profile/assets/methodology6.png',
+];
+
+
 const skills = [
   '/my-profile/assets/laravel.png',
   '/my-profile/assets/javascript.png',
@@ -14,8 +24,8 @@ const skills = [
   '/my-profile/assets/nodejs.png',
   '/my-profile/assets/typescript.png',
   '/my-profile/assets/reactjs.png',
-  '/my-profile/assets/git.png',
 ];
+
 
 
 const images = [
@@ -193,24 +203,44 @@ function App() {
         </motion.div>
         <hr />
         <section id="skills">
-          <h3>SKILLS</h3>
-          <motion.div
-            className="skills-container"
-            variants={skillsContainerVariants}
-            initial="initial"
-            animate="animate"
-          >
-            {skills.map((skill, index) => (
-              <motion.div
-                key={index}
-                className="skill-item"
-                style={{
-                  backgroundImage: `url(${skill})`,
-                }}
-              />
-            ))}
-          </motion.div>
-        </section>
+  <h2>Skills</h2>
+  <motion.div
+    className="skills-container"
+    variants={skillsContainerVariants}
+    initial="initial"
+    animate="animate"
+  >
+    {skills.map((skill, index) => (
+      <motion.div
+        key={index}
+        className="skill-item"
+        style={{
+          backgroundImage: `url(${skill})`,
+        }}
+      />
+    ))}
+  </motion.div>
+</section>
+
+<section id="methodologies">
+  <h2>Metodologias</h2>
+  <motion.div
+    className="methodologies-container"
+    variants={skillsContainerVariants}
+    initial="initial"
+    animate="animate"
+  >
+    {methodologies.map((methodology, index) => (
+      <motion.div
+        key={index}
+        className="methodology-item"
+        style={{
+          backgroundImage: `url(${methodology})`,
+        }}
+      />
+    ))}
+  </motion.div>
+</section>
         <hr />
         <section id="experience">
           <h3>EXPERIENCE</h3>
