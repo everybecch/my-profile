@@ -16,6 +16,21 @@ const images = [
   'every4.jpg'
 ];
 
+const headerVariants = {
+  initial: { opacity: 0, y: -20 },
+  animate: { opacity: 1, y: 0 },
+};
+
+const sectionVariants = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+};
+
+const textVariants = {
+  initial: { opacity: 0, x: -20 },
+  animate: { opacity: 1, x: 0 },
+};
+
 function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -34,27 +49,13 @@ function App() {
     animate: { opacity: 1, scale: 1 },
   };
 
-  const headerVariants = {
-    initial: { opacity: 0, y: -20 },
-    animate: { opacity: 1, y: 0 },
-  };
-
-  const sectionVariants = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-  };
-
-  const textVariants = {
-    initial: { opacity: 0, x: -20 },
-    animate: { opacity: 1, x: 0 },
-  };
-
   const handleImageClick = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   return (
     <div className="App">
+      <div className="background-animation" /> {/* Elemento para o fundo animado */}
       <header className="App-header">
         <motion.img
           src={images[currentImageIndex]}
@@ -69,6 +70,7 @@ function App() {
           variants={headerVariants}
           initial="initial"
           animate="animate"
+          className="animated-font"
         >
           Everton Santos
         </motion.h1>
