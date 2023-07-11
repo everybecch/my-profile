@@ -5,6 +5,24 @@
   font-family: Arial, sans-serif;
 }
 
+/* ... Outros estilos ... */
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 600px) {
+  /* Estilos específicos para dispositivos móveis */
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  /* ... Outras regras de estilo específicas para dispositivos móveis ... */
+}
+
 .App-header {
   background-color: #333;
   padding: 20px;
@@ -81,7 +99,41 @@ li {
 
 .sobre-text {
   white-space: pre-line;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
 }
+
+#skills {
+  background-color: white; /* Altera o fundo da seção Skills para branco */
+}
+
+.skills-container {
+  display: flex;
+  overflow-x: hidden; /* Oculta a rolagem horizontal */
+  width: 100%;
+  height: 200px;
+}
+
+.skill-item {
+  flex-shrink: 0;
+  width: 150px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: 150px; /* Ajuste o tamanho das imagens conforme necessário */
+  margin-right: 20px; /* Espaço entre as imagens */
+  background-size: cover;
+  background-position: center;
+}
+
+.skill-item:last-child {
+  margin-right: 0;
+}
+
+
+body {
+  overflow-x: hidden; /* Impede a barra de rolagem lateral */
+}
+
 
 .content-container {
   display: flex;

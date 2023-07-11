@@ -7,13 +7,21 @@ const experiences = [
 ];
 
 const skills = [
-  // Habilidades para adicionar
+  '/my-profile/assets/laravel.png',
+  '/my-profile/assets/javascript.png',
+  '/my-profile/assets/php.png',
+  '/my-profile/assets/nextjs.png',
+  '/my-profile/assets/nodejs.png',
+  '/my-profile/assets/typescript.png',
+  '/my-profile/assets/reactjs.png',
+  '/my-profile/assets/git.png',
 ];
 
+
 const images = [
-  'every.jpg',
-  'every3.jpg',
-  'every4.jpg'
+  'my-profile/every.jpg',
+  'my-profile/every3.jpg',
+  'my-profile/every4.jpg'
 ];
 
 const headerVariants = {
@@ -30,6 +38,39 @@ const textVariants = {
   initial: { opacity: 0, x: -20 },
   animate: { opacity: 1, x: 0 },
 };
+
+const skillsContainerVariants = {
+  animate: {
+    x: ['-100%', '100%'],
+    transition: {
+      x: {
+        repeat: Infinity,
+        duration: 10,
+        ease: 'linear'
+      }
+    }
+  }
+};
+
+// ...
+
+<section id="skills">
+  <h2>Skills</h2>
+  <motion.div
+    className="skills-container"
+    variants={skillsContainerVariants}
+    initial="initial"
+    animate="animate"
+  >
+    {skills.map((skill, index) => (
+      <motion.div
+        key={index}
+        className="skill-item"
+        style={{ backgroundImage: `url(${skill})` }}
+      />
+    ))}
+  </motion.div>
+</section>
 
 function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -53,9 +94,16 @@ function App() {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
+  const handleButtonClick = (sectionName) => {
+    const sectionElement = document.getElementById(sectionName);
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="App">
-      <div className="background-animation" /> {/* Elemento para o fundo animado */}
+      <div className="background-animation" />
       <header className="App-header">
         <motion.img
           src={images[currentImageIndex]}
@@ -82,6 +130,7 @@ function App() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
+              onClick={() => handleButtonClick("skills")}
             >
               Skills
             </motion.button>
@@ -89,6 +138,7 @@ function App() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
+              onClick={() => handleButtonClick("experience")}
             >
               Experience
             </motion.button>
@@ -96,6 +146,7 @@ function App() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
+              onClick={() => handleButtonClick("academic")}
             >
               Academic
             </motion.button>
@@ -107,7 +158,7 @@ function App() {
           initial="initial"
           animate="animate"
         >
-          Minha Historia / My history
+          Minha História / My history
         </motion.h2>
         <motion.div
           key="sobre-text"
@@ -116,7 +167,7 @@ function App() {
           animate="animate"
           exit="initial"
           className="sobre-text"
-          style={{ fontFamily: 'Arial', fontSize: '16px' }}
+          style={{ fontFamily: 'Arial', fontSize: '16px', textAlign: 'center' }}
         >
           Everton Santos, reside na cidade de São Paulo especificamente na zona leste de São Paulo em Itaquera
           começou sua carreira na tecnologia no ano de 2014<br></br> onde já prestava serviço corrigindo
@@ -132,25 +183,37 @@ function App() {
           Esse é um pedaço da minha história. agradeço pela leitura,<br></br> e conto com voce para continuar
           contruindo as paginas do meu livro afinal todos nós que amamos tecnologia<br></br> somos aventureiros e não paramos no tempo, nós andamos junto ao tempo da tecnologia
           <br></br>
-          <br></br>
           <br></br><h3>English.</h3>
 
-          Everton Santos, lives in the city of São Paulo specifically in the east zone of Sp inItaquera
-          began his career in technology in<br></br> the year 2014 where he already provided service correcting
-          and repairing hardware and software<br></br> over time has been getting professional experience
-          and moving to other areas of technology as anaslista support<br></br>
-          systems analyst information security, infrastructure analyst and networks,
-          in this time certified linux complete operating system<br></br> certified programming in php with udemy
-          until one day he awakened interest in the area of<br></br> programming and development where he stood out developing
-          his first successful project in his career<br></br> a telecom system for automatic dialing from there began
-          a passion for creation and the dev world<br></br> as he already had knowledge in systems and cloud, he became a devops
-          His career totals 9 years<br></br> 4 of which dedicated to development
+          "Everton Santos resides in the city of São Paulo, specifically in the eastern zone of São Paulo in Itaquera. He began his career in technology in 2014,<br></br> where he was already providing services in hardware and software troubleshooting and repair. Over time, he gained professional experience and transitioned<br></br>to other areas of technology, such as support analyst, systems analyst, information security, infrastructure and network analyst.<br></br> During this time, he obtained a complete certification in Linux operating systems and PHP programming through Udemy.
 
-          This is a piece of my story. thanks for reading, and I count on you to continue<br></br>
-          contruindo the pages of my book after all I am an adventurer and does not stop to get knowledge
-          in technology<br></br> that since I was 12 years old disassembling machines and tube monitors.
+          One day, <br></br> he developed a keen interest in programming and software development, which led to his standout success in his first career project: <br></br> an automatic dialing telecom system. This marked the beginning of his passion for creation and the world of development.<br></br> With his knowledge in systems and cloud technologies, he became a DevOps professional. In total, his career spans nine years,<br></br> with four dedicated to development.
+
+          This is a part of my story. Thank you for reading, and I look forward to continuing to build the pages of my book. After all, <br></br>those of us who love technology are adventurers who never stop in time; we move alongside the ever-evolving world of technology."
         </motion.div>
-        <section>
+        <hr />
+        <section id="skills">
+          <h3>SKILLS</h3>
+          <motion.div
+            className="skills-container"
+            variants={skillsContainerVariants}
+            initial="initial"
+            animate="animate"
+          >
+            {skills.map((skill, index) => (
+              <motion.div
+                key={index}
+                className="skill-item"
+                style={{
+                  backgroundImage: `url(${skill})`,
+                }}
+              />
+            ))}
+          </motion.div>
+        </section>
+        <hr />
+        <section id="experience">
+          <h3>EXPERIENCE</h3>
           {experiences.map((experience) => (
             <motion.div
               key={experience.id}
@@ -166,14 +229,10 @@ function App() {
             </motion.div>
           ))}
         </section>
-        <section>
-          <ul>
-            {skills.map((skill) => (
-              <motion.li key={skill} variants={sectionVariants}>
-                {skill}
-              </motion.li>
-            ))}
-          </ul>
+        <hr />
+        <section id="academic">
+          <h3>ACADEMIC</h3>
+          {/* Conteúdo da seção Academic */}
         </section>
       </main>
     </div>
