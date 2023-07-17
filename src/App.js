@@ -7,10 +7,10 @@ const experiences = [
 ];
 
 const stack = [
-  '/my-profilel/assets/jest.png',
-  '/my-profilel/assets/bit.png',
-  '/my-profilel/assets/jenkins.png',
-  '/my-profilel/assets/git.png',
+  '/my-profile/assets/jest.png',
+  '/my-profile/assets/bit.png',
+  '/my-profile/assets/jenkins.png',
+  '/my-profile/assets/git.png',
 ];
 
 const skills = [
