@@ -18,6 +18,7 @@ const stack = [
   '/my-profile/assets/kubernets.png',
   '/my-profile/assets/asterisk.png',
   '/my-profile/assets/twilio.png',
+  '/my-profile/assets/yarn.png',
 ];
 
 const skills = [
@@ -245,7 +246,7 @@ function App() {
 </section>
         <hr />
         <section id="experience">
-          <h3>EXPERIENCE</h3>
+          <h3>EXPERIENCIAS / EXPERIENCES</h3>
           {experiences.map((experience) => (
             <motion.div
               key={experience.id}
@@ -263,7 +264,7 @@ function App() {
         </section>
         <hr />
         <section id="academic">
-          <h3>ACADEMIC</h3>
+          <h3>FORMAÇÃO / ACADEMIC</h3>
           {/* Conteúdo da seção Academic */}
         </section>
       </main>
