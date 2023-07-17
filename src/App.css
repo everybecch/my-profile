@@ -14,10 +14,8 @@
   .profile-picture {
     width: 150px;
     height: 150px;
-    top: 10px;
-    left: 0;
-    right: 0;
     margin: 0 auto;
+    position: static; /* Adicione esta linha */
   }
 
   /* ... Outras regras de estilo específicas para dispositivos móveis ... */
@@ -115,9 +113,9 @@ li {
 
 .stack-container {
   display: flex;
-  overflow-x: hidden; /* Oculta a rolagem horizontal */
+  overflow-x: hidden;
   width: 100%;
-  height: 200px;
+  height: 300px; /* Altere para um valor maior */
 }
 
 
@@ -132,9 +130,9 @@ li {
 
 .skills-container {
   display: flex;
-  overflow-x: hidden; /* Oculta a rolagem horizontal */
+  overflow-x: hidden;
   width: 100%;
-  height: 200px;
+  height: 300px; /* Altere para um valor maior */
 }
 
 .skill-item {
