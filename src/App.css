@@ -187,15 +187,6 @@ body {
   h1 {
     font-size: 24px;
   }
-
-  .menu-options {
-    flex-direction: column;
-  }
-
-  .menu-options button {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
 }
 
 /* Animação da fonte */
@@ -241,7 +232,7 @@ body {
 
 .App-header {
   background-color: #333;
-  padding: 100px;
+  padding: 20px;
   color: #fff;
   position: relative;
 }
@@ -282,14 +273,20 @@ li {
 }
 
 .menu {
-  margin-top: 40px;
+  margin-top: -50px;
+  padding-top: 160px; /* Adicione um espaçamento superior para criar espaço entre os botões e a foto de perfil */
+  position: relative;
+  z-index: 2;
 }
 
 .menu-options {
   display: flex;
   justify-content: center;
   gap: 10px;
+  max-width: 300px; /* Adicione uma largura máxima para os botões */
+  margin: 0 auto; /* Centralize os botões horizontalmente */
 }
+
 
 .menu-options button {
   background-color: #333;
@@ -341,15 +338,6 @@ li {
 
   h1 {
     font-size: 24px;
-  }
-
-  .menu-options {
-    flex-direction: column;
-  }
-
-  .menu-options button {
-    margin-bottom: 10px;
-    font-size: 14px;
   }
 }
 
