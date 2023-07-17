@@ -163,6 +163,14 @@ function App() {
             >
               Academic
             </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              variants={textVariants}
+              onClick={() => handleButtonClick("experience")}
+            >
+              Contact
+            </motion.button>
           </div>
         </section>
         <motion.h2
@@ -184,7 +192,7 @@ function App() {
         >
           Everton Santos, reside na cidade de São Paulo especificamente na zona leste em Itaquera,
           começou sua carreira na tecnologia no ano de 2014<br></br> onde já prestava serviços, corrigindo
-          e reparando Hardwares e Software, ao longo do tempo foi obtendo experiencia profissional<br></br>
+          e reparando Hardwares e Softwares, ao longo do tempo foi obtendo experiencia profissional<br></br>
           e passando para outras areas da tecnologia como, anaslista de suporte,
           analista de sistemas, segurança da informação,<br></br> analista de infraestrutura e redes,
           nesse meio tempo certificou-se em linux, sistema operacional completo, em programação web<br></br> php com a udemy,
@@ -198,7 +206,7 @@ function App() {
           <br></br>
           <br></br><h3>English.</h3>
 
-          "Everton Santos resides in the city of São Paulo, specifically in the eastern zone of São Paulo in Itaquera. He began his career in technology in 2014,<br></br> where he was already providing services in hardware and software troubleshooting and repair. Over time, he gained professional experience and transitioned<br></br>to other areas of technology, such as support analyst, systems analyst, information security, infrastructure and network analyst.<br></br> During this time, he obtained a complete certification in Linux operating systems and PHP programming through Udemy.
+          "Everton Santos lives in the city of São Paulo, specifically in the eastern zone of São Paulo in Itaquera. He began his career in technology in 2014,<br></br> where he was already providing services in hardware and software troubleshooting and repair. Over time, he gained professional experience and transitioned<br></br>to other areas of technology, such as support analyst, systems analyst, information security, infrastructure and network analyst.<br></br> During this time, he obtained a complete certification in Linux operating systems and PHP programming through Udemy.
 
           One day, <br></br> he developed a keen interest in programming and software development, which led to his standout success in his first career project: <br></br> an automatic dialing telecom system. This marked the beginning of his passion for creation and the world of development.<br></br> With his knowledge in systems and cloud technologies, he became a DevOps professional. In total, his career spans nine years,<br></br> with four dedicated to development.
 
