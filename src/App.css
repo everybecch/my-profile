@@ -339,6 +339,22 @@ li {
   h1 {
     font-size: 24px;
   }
+
+  .menu {
+    margin-top: 40px;
+    padding-top: 160px; /* Adicione um espaçamento superior para criar espaço entre os botões e a foto de perfil */
+    position: relative;
+    z-index: 2;
+  }
+  
+  .menu-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 300px; /* Adicione uma largura máxima para os botões */
+    margin: 0 auto; /* Centralize os botões horizontalmente */
+  }
+  
 }
 
 /* Animação da fonte */
