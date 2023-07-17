@@ -6,15 +6,12 @@ const experiences = [
   // Experiências profissionais
 ];
 
-const methodologies = [
-  '/my-profile/assets/methodology1.png',
-  '/my-profile/assets/methodology2.png',
-  '/my-profile/assets/methodology3.png',
-  '/my-profile/assets/methodology4.png',
-  '/my-profile/assets/methodology5.png',
-  '/my-profile/assets/methodology6.png',
+const stack = [
+  '/my-profilel/assets/jest.png',
+  '/my-profilel/assets/bit.png',
+  '/my-profilel/assets/jenkins.png',
+  '/my-profilel/assets/git.png',
 ];
-
 
 const skills = [
   '/my-profile/assets/laravel.png',
@@ -62,6 +59,18 @@ const skillsContainerVariants = {
   }
 };
 
+const stackContainerVariants = {
+  animate: {
+    x: ['-100%', '100%'],
+    transition: {
+      x: {
+        repeat: Infinity,
+        duration: 10,
+        ease: 'linear'
+      }
+    }
+  }
+};
 // ...
 
 <section id="skills">
@@ -203,7 +212,7 @@ function App() {
         </motion.div>
         <hr />
         <section id="skills">
-  <h2>Skills</h2>
+  <h2>SKILLS</h2>
   <motion.div
     className="skills-container"
     variants={skillsContainerVariants}
@@ -222,20 +231,20 @@ function App() {
   </motion.div>
 </section>
 
-<section id="methodologies">
-  <h2>Metodologias</h2>
+<section id="stack">
+  <h2>STACKS</h2>
   <motion.div
-    className="methodologies-container"
-    variants={skillsContainerVariants}
+    className="stack-container"
+    variants={stackContainerVariants}
     initial="initial"
     animate="animate"
   >
-    {methodologies.map((methodology, index) => (
+    {stack.map((stack, index) => (
       <motion.div
         key={index}
-        className="methodology-item"
+        className="stack-item"
         style={{
-          backgroundImage: `url(${methodology})`,
+          backgroundImage: `url(${stack})`,
         }}
       />
     ))}
