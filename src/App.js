@@ -34,12 +34,10 @@ const skills = [
   '/my-profile/assets/c++.png',
 ];
 
-
-
 const images = [
-  'every.jpg',
-  'every3.jpg',
-  'every4.jpg'
+  '/my-profile/every.jpg',
+  '/my-profile/every2.jpg',
+  '/my-profile/every4.jpg'
 ];
 
 const headerVariants = {

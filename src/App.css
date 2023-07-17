@@ -7,20 +7,6 @@
 
 /* ... Outros estilos ... */
 
-/* Responsivo para dispositivos móveis */
-@media (max-width: 600px) {
-  /* Estilos específicos para dispositivos móveis */
-
-  .profile-picture {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    position: static; /* Adicione esta linha */
-  }
-
-  /* ... Outras regras de estilo específicas para dispositivos móveis ... */
-}
-
 .App-header {
   background-color: #333;
   padding: 20px;
@@ -172,19 +158,20 @@ body {
   .profile-picture {
     width: 150px;
     height: 150px;
-    margin: 0 auto;
     position: relative;
-    top: initial;
-    left: initial;
-    transform: initial;
+    top: 150px;
+    right: 150px;
+    
   }
 
   .App-header {
-    padding: 10px;
+    padding: 20px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 20px;
+    position: relative;
+    left: 100px;
   }
 
   .menu-options {
@@ -197,6 +184,7 @@ body {
     font-size: 14px;
     max-width: 200px;
     width: 100%;
+    top: 100px;
   }
 
   .sobre-container {
@@ -208,6 +196,10 @@ body {
     font-size: 16px;
     text-align: center;
     margin-top: 20px;
+  }
+  .content-container {
+    text-align: center;
+    margin-top: 120px;
   }
 }
 /* Animação da fonte */
