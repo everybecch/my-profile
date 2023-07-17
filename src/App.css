@@ -168,27 +168,6 @@ body {
   align-items: center;
 }
 
-/* Responsivo para dispositivos móveis */
-
-@media (max-width: 600px) {
-  .profile-picture {
-    width: 150px;
-    height: 150px;
-    top: 10px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
-  .App-header {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-}
-
 /* Animação da fonte */
 
 .animated-font {
@@ -326,10 +305,8 @@ li {
   .profile-picture {
     width: 150px;
     height: 150px;
-    top: 10px;
-    left: 0;
-    right: 0;
     margin: 0 auto;
+    position: static; /* Adicione esta linha */
   }
 
   .App-header {
@@ -354,6 +331,21 @@ li {
     max-width: 300px; /* Adicione uma largura máxima para os botões */
     margin: 0 auto; /* Centralize os botões horizontalmente */
   }
+
+  .stack-container {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    height: 300px; /* Altere para um valor maior */
+  }
+  
+  .skills-container {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    height: 300px; /* Altere para um valor maior */
+  }
+  
   
 }
 
