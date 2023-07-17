@@ -15,6 +15,9 @@ const stack = [
   '/my-profile/assets/docker.png',
   '/my-profile/assets/mysql.png',
   '/my-profile/assets/mariadb.png',
+  '/my-profile/assets/kubernets.png',
+  '/my-profile/assets/asterisk.png',
+  '/my-profile/assets/twilio.png',
 ];
 
 const skills = [
@@ -26,7 +29,9 @@ const skills = [
   '/my-profile/assets/typescript.png',
   '/my-profile/assets/reactjs.png',
   '/my-profile/assets/python.png',
-
+  '/my-profile/assets/html.png',
+  '/my-profile/assets/css.png',
+  '/my-profile/assets/c++.png',
 ];
 
 

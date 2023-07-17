@@ -109,6 +109,10 @@ li {
   background-color: white; /* Altera o fundo da seção Skills para branco */
 }
 
+#stack {
+  background-color: white; /* Altera o fundo da seção Skills para branco */
+}
+
 .stack-container {
   display: flex;
   overflow-x: hidden; /* Oculta a rolagem horizontal */
@@ -119,8 +123,8 @@ li {
 
 .stack-item {
   flex-shrink: 0;
-  width: 150px; /* Ajuste o tamanho das imagens conforme necessário */
-  height: 150px; /* Ajuste o tamanho das imagens conforme necessário */
+  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: 100px; /* Ajuste o tamanho das imagens conforme necessário */
   margin-right: 20px; /* Espaço entre as imagens */
   background-size: cover;
   background-position: center;
@@ -135,11 +139,15 @@ li {
 
 .skill-item {
   flex-shrink: 0;
-  width: 150px; /* Ajuste o tamanho das imagens conforme necessário */
-  height: 150px; /* Ajuste o tamanho das imagens conforme necessário */
+  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: 100px; /* Ajuste o tamanho das imagens conforme necessário */
   margin-right: 20px; /* Espaço entre as imagens */
   background-size: cover;
   background-position: center;
+}
+
+.stack-item:last-child {
+  margin-right: 0;
 }
 
 .skill-item:last-child {
