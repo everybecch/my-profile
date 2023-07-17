@@ -167,12 +167,18 @@ body {
 /* Responsivo para dispositivos móveis */
 
 @media (max-width: 600px) {
+  /* Estilos específicos para dispositivos móveis */
+
   .profile-picture {
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    position: static; /* Adicione esta linha */
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: initial;
   }
+
   .App-header {
     padding: 10px;
   }
@@ -181,28 +187,29 @@ body {
     font-size: 24px;
   }
 
-  .menu {
-    margin-top: 40px;
-    padding-top: 160px; /* Adicione um espaçamento superior para criar espaço entre os botões e a foto de perfil */
-    position: relative;
-    z-index: 2;
-  }
-  
   .menu-options {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    max-width: 300px; /* Adicione uma largura máxima para os botões */
-    margin: 0 auto; /* Centralize os botões horizontalmente */
+    flex-direction: column;
+    align-items: center;
   }
-  
 
   .menu-options button {
     margin-bottom: 10px;
     font-size: 14px;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-text {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
   }
 }
-
 /* Animação da fonte */
 
 .animated-font {
