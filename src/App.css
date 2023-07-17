@@ -97,28 +97,12 @@ li {
   background-color: white; /* Altera o fundo da seção Skills para branco */
 }
 
-.stack-container {
-  display: flex;
-  overflow-x: hidden;
-  width: 100%;
-  height: 300px; /* Altere para um valor maior */
-}
-
-
-.stack-item {
-  flex-shrink: 0;
-  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
-  height: 100px; /* Ajuste o tamanho das imagens conforme necessário */
-  margin-right: 20px; /* Espaço entre as imagens */
-  background-size: cover;
-  background-position: center;
-}
-
 .skills-container {
   display: flex;
   overflow-x: hidden;
   width: 100%;
-  height: 300px; /* Altere para um valor maior */
+  height: auto; /* Altere para um valor maior */
+  margin-bottom: 0; /* Remova o espaço abaixo das imagens */
 }
 
 .skill-item {
@@ -129,6 +113,32 @@ li {
   background-size: cover;
   background-position: center;
 }
+
+.stack-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  height: auto; /* Altere para um valor maior */
+  margin-bottom: 0; /* Remova o espaço abaixo das imagens */
+}
+
+.stack-item {
+  flex-shrink: 0;
+  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  margin-right: 20px; /* Espaço entre as imagens */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.section-divider {
+  width: 50%; /* Aumenta a largura da linha */
+  height: 2px; /* Define a altura da linha */
+  background-color: #333; /* Define a cor da linha */
+  margin: 20px auto; /* Centraliza a linha horizontalmente e adiciona espaçamento vertical */
+}
+
 
 .stack-item:last-child {
   margin-right: 0;
@@ -155,13 +165,24 @@ body {
 @media (max-width: 600px) {
   /* Estilos específicos para dispositivos móveis */
 
+  .App {
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    width: 100vw; /* Define a largura da página como 100% da largura da viewport */
+  }
+
+  .App-header {
+    padding: 10px;
+  }
+
   .profile-picture {
     width: 150px;
     height: 150px;
-    position: relative;
-    top: 150px;
-    right: 150px;
-    
+    margin: 0 auto;
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+    right: auto;
   }
 
   .App-header {
@@ -186,6 +207,31 @@ body {
     width: 100%;
     top: 100px;
   }
+
+  @media (max-width: 600px) {
+    .skills-container {
+      flex-wrap: wrap;
+    }
+  
+    .skill-item {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .stack-container {
+      flex-wrap: wrap;
+    }
+  
+    .stack-item {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  
 
   .sobre-container {
     flex-direction: column;

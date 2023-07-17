@@ -228,6 +228,7 @@ function App() {
       />
     ))}
   </motion.div>
+  <div className="section-divider"></div> {/* Adicione essa linha */}
 </section>
 
 <section id="stack">
@@ -248,6 +249,7 @@ function App() {
       />
     ))}
   </motion.div>
+  <div className="section-divider"></div> {/* Adicione essa linha */}
 </section>
         <hr />
         <section id="experience">
