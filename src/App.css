@@ -67,6 +67,7 @@ li {
 
 .menu {
   margin-top: 40px;
+  padding-top: 160px; /* Adicione um espaçamento superior para criar espaço entre os botões e a foto de perfil */
   position: relative;
   z-index: 2;
 }
@@ -75,12 +76,15 @@ li {
   display: flex;
   justify-content: center;
   gap: 10px;
+  max-width: 300px; /* Adicione uma largura máxima para os botões */
+  margin: 0 auto; /* Centralize os botões horizontalmente */
 }
+
 
 .menu-options button {
   margin-bottom: 10px;
   font-size: 14px;
-  position: relative;
+  position: static;
 }
 
 .menu-options button:hover {
