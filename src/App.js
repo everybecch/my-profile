@@ -18,7 +18,6 @@ const stack = [
   '/my-profile/assets/kubernets.png',
   '/my-profile/assets/asterisk.png',
   '/my-profile/assets/twilio.png',
-  '/my-profile/assets/yarn.png',
 ];
 
 const skills = [
