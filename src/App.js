@@ -8,9 +8,13 @@ const experiences = [
 
 const stack = [
   '/my-profile/assets/jest.png',
-  '/my-profile/assets/bit.png',
+  '/my-profile/assets/bitb.png',
   '/my-profile/assets/jenkins.png',
   '/my-profile/assets/git.png',
+  '/my-profile/assets/linux.png',
+  '/my-profile/assets/docker.png',
+  '/my-profile/assets/mysql.png',
+  '/my-profile/assets/mariadb.png',
 ];
 
 const skills = [
@@ -21,6 +25,8 @@ const skills = [
   '/my-profile/assets/nodejs.png',
   '/my-profile/assets/typescript.png',
   '/my-profile/assets/reactjs.png',
+  '/my-profile/assets/python.png',
+
 ];
 
 
@@ -61,7 +67,7 @@ const skillsContainerVariants = {
 
 const stackContainerVariants = {
   animate: {
-    x: ['-100%', '100%'],
+    x: ['100%', '-100%'], // Inverte a direção do movimento
     transition: {
       x: {
         repeat: Infinity,
@@ -71,25 +77,7 @@ const stackContainerVariants = {
     }
   }
 };
-// ...
-
-<section id="skills">
-  <h2>Skills</h2>
-  <motion.div
-    className="skills-container"
-    variants={skillsContainerVariants}
-    initial="initial"
-    animate="animate"
-  >
-    {skills.map((skill, index) => (
-      <motion.div
-        key={index}
-        className="skill-item"
-        style={{ backgroundImage: `url(${skill})` }}
-      />
-    ))}
-  </motion.div>
-</section>
+// .
 
 function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -212,7 +200,7 @@ function App() {
         </motion.div>
         <hr />
         <section id="skills">
-  <h2>SKILLS</h2>
+  <h2>HABILIDADES / SKILLS</h2>
   <motion.div
     className="skills-container"
     variants={skillsContainerVariants}
@@ -232,7 +220,7 @@ function App() {
 </section>
 
 <section id="stack">
-  <h2>STACKS</h2>
+  <h2>TECNOLOGIAS / TECHNOLOGIES</h2>
   <motion.div
     className="stack-container"
     variants={stackContainerVariants}
