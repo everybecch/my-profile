@@ -251,6 +251,17 @@ body {
       margin-right: 10px;
       margin-bottom: 10px;
     }
+
+    .experiences-container {
+      flex-wrap: wrap;
+    }
+  
+    .experience-item {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
   }
   
 
