@@ -188,19 +188,17 @@ function App() {
           style={{ fontFamily: 'Arial', fontSize: '16px', textAlign: 'center' }}
         >
           Everton Santos, reside na cidade de São Paulo especificamente na zona leste em Itaquera,
-          começou sua carreira na tecnologia no ano de 2014<br></br> onde já prestava serviços, corrigindo
-          e reparando Hardwares e Softwares, ao longo do tempo foi obtendo experiencia profissional<br></br>
-          e passando para outras areas da tecnologia como, anaslista de suporte,
-          analista de sistemas, segurança da informação,<br></br> analista de infraestrutura e redes,
-          nesse meio tempo certificou-se em linux, sistema operacional completo, em programação web<br></br> php com a udemy,
-          até que um dia despertou interesse na area da programação e desenvolvimento onde se destacou desenvolvendo<br></br>
-          seu primeiro projeto de sucesso na carreira, um sistema de "telecom discagem automatica", a partir disso iniciou-se<br></br>
-          uma paixão pela criação e pelo mundo Dev, como ja havia conhecimento em sistemas e cloud, se tornou um DevOps.
-          Ao todo sua carreira<br></br> soma 9 anos sendo 4 anos dedicado ao desenvolvimento.
+          começou sua carreira na tecnologia no ano de 2014<br></br> onde já prestava serviços corrigindo
+          e reparando Hardwares e Softwares, ao longo do tempo foi obtendo experiência profissional<br></br>
+          e passando para outras áreas da tecnologia como analista de suporte,
+          analista de sistemas, segurança da informação<br></br> analista de infraestrutura e redes,
+          nesse meio tempo certificou-se em Linux, sistema operacional completo, em programação web<br></br> PHP com a Udemy,
+          até que um dia despertou interesse na área da programação e desenvolvimento, onde se destacou desenvolvendo<br></br> seu primeiro projeto de sucesso na carreira, um sistema de "Telecomunicação discagem automática", desde então iniciou-se<br></br> uma paixão pela criação e pelo mundo DEV, como já havia conhecimento em sistemas e cloud, se tornou um DevOps.
+          Ao todo sua carreira<br></br> soma 9 anos sendo 4 anos dedicados ao desenvolvimento.
 
-          Esse é um pedaço da minha história. Agradeço pela leitura<br></br> e conto com voce para continuar
-          contruindo as paginas do meu livro.
-          <br></br>
+          Esse é um pedaço da minha história. Agradeço pela leitura<br></br> e conto com você para continuar
+          construindo as paginas do meu livro.
+
           <br></br><h3>English.</h3>
 
           "Everton Santos lives in the city of São Paulo, specifically in the eastern zone of São Paulo in Itaquera. He began his career in technology in 2014,<br></br> where he was already providing services in hardware and software troubleshooting and repair. Over time, he gained professional experience and transitioned<br></br>to other areas of technology, such as support analyst, systems analyst, information security, infrastructure and network analyst.<br></br> During this time, he obtained a complete certification in Linux operating systems and PHP programming through Udemy.
