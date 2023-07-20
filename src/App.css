@@ -126,7 +126,7 @@ li {
   flex-shrink: 0;
   width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
   height: 100px; /* Ajuste o tamanho das imagens conforme necessário */
-  margin-right: 20px; /* Espaço entre as imagens */
+  margin-right: 10px; /* Espaço entre as imagens */
   background-size: cover;
   background-position: center;
 }
