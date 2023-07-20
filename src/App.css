@@ -97,6 +97,23 @@ li {
   background-color: white; /* Altera o fundo da seção Skills para branco */
 }
 
+.experiences-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  height: auto; /* Altere para um valor maior */
+  margin-bottom: 0; /* Remova o espaço abaixo das imagens */
+}
+
+.experiences-item {
+  flex-shrink: auto ;
+  width: 200px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: 200px; /* Ajuste o tamanho das imagens conforme necessário */
+  margin-right: 50px; /* Espaço entre as imagens */
+  background-size: cover;
+  background-position: center;
+}
+
 .skills-container {
   display: flex;
   overflow-x: hidden;
@@ -107,8 +124,8 @@ li {
 
 .skill-item {
   flex-shrink: 0;
-  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
-  height: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  width: 110px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: 110px; /* Ajuste o tamanho das imagens conforme necessário */
   margin-right: 20px; /* Espaço entre as imagens */
   background-size: cover;
   background-position: center;
@@ -124,9 +141,15 @@ li {
 
 .stack-item {
   flex-shrink: 0;
+<<<<<<< HEAD
   width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
   height: 100px; /* Ajuste o tamanho das imagens conforme necessário */
   margin-right: 10px; /* Espaço entre as imagens */
+=======
+  width: 110px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: 110px; /* Ajuste o tamanho das imagens conforme necessário */
+  margin-right: 15px; /* Espaço entre as imagens */
+>>>>>>> 0a55f28b7db2dd5ebde2ea8c176d400e0389397f
   background-size: cover;
   background-position: center;
 }
@@ -145,6 +168,10 @@ li {
 }
 
 .skill-item:last-child {
+  margin-right: 0;
+}
+
+.experience-item:last-child {
   margin-right: 0;
 }
 
@@ -225,6 +252,17 @@ body {
     }
   
     .stack-item {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .experiences-container {
+      flex-wrap: wrap;
+    }
+  
+    .experience-item {
       width: 80px;
       height: 80px;
       margin-right: 10px;
