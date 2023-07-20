@@ -141,15 +141,9 @@ li {
 
 .stack-item {
   flex-shrink: 0;
-<<<<<<< HEAD
-  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
-  height: 100px; /* Ajuste o tamanho das imagens conforme necessário */
-  margin-right: 10px; /* Espaço entre as imagens */
-=======
   width: 110px; /* Ajuste o tamanho das imagens conforme necessário */
   height: 110px; /* Ajuste o tamanho das imagens conforme necessário */
   margin-right: 15px; /* Espaço entre as imagens */
->>>>>>> 0a55f28b7db2dd5ebde2ea8c176d400e0389397f
   background-size: cover;
   background-position: center;
 }
