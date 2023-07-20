@@ -107,9 +107,9 @@ li {
 
 .experiences-item {
   flex-shrink: auto ;
-  width: 200px; /* Ajuste o tamanho das imagens conforme necessário */
-  height: 200px; /* Ajuste o tamanho das imagens conforme necessário */
-  margin-right: 50px; /* Espaço entre as imagens */
+  width: 150px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: 150px; /* Ajuste o tamanho das imagens conforme necessário */
+  margin-right: 30px; /* Espaço entre as imagens */
   background-size: cover;
   background-position: center;
 }
@@ -141,9 +141,9 @@ li {
 
 .stack-item {
   flex-shrink: 0;
-  width: 105px; /* Ajuste o tamanho das imagens conforme necessário */
-  height: 105px; /* Ajuste o tamanho das imagens conforme necessário */
-  margin-right: 20px; /* Espaço entre as imagens */
+  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  margin-right: 10px; /* Espaço entre as imagens */
   background-size: cover;
   background-position: center;
 }
