@@ -37,6 +37,12 @@ const skills = [
   '/my-profile/assets/c++.png',
 ];
 
+const academic = [
+  '/my-profile/src/unicid.png',
+  '/my-profile/src/4linux.png',
+  '/my-profile/src/udemy.png',
+];
+
 const images = [
   '/my-profile/every.jpg',
   '/my-profile/every2.jpg',
@@ -80,6 +86,8 @@ const stackContainerVariants = {
   }
 };
 
+
+
 const experienceContainerVariants = {
   animate: {
     x: ['-100%', '100%'], // Inverte a direção do movimento
@@ -87,6 +95,19 @@ const experienceContainerVariants = {
       x: {
         repeat: Infinity,
         duration: 20,
+        ease: 'linear'
+      }
+    }
+  }
+};
+
+const academicContainerVariants = {
+  animate: {
+    x: ['100%', '-100%'], // Inverte a direção do movimento
+    transition: {
+      x: {
+        repeat: Infinity,
+        duration: 25,
         ease: 'linear'
       }
     }
@@ -280,11 +301,26 @@ function App() {
               />
             ))}
           </motion.div>
-          </section>
+        </section>
         <hr />
         <section id="academic">
           <h3>FORMAÇÃO / ACADEMIC</h3>
-          {/* Conteúdo da seção Academic */}
+          <motion.div
+            className="academic-container"
+            variants={academicContainerVariants} 
+            initial="initial"
+            animate="animate"
+          >
+            {academic.map((academic, index) => (
+              <motion.div
+                key={index}
+                className="academic-item" 
+                style={{
+                  backgroundImage: `url(${academic})`,
+                }}
+              />
+            ))}
+          </motion.div>
         </section>
       </main>
     </div>

@@ -156,6 +156,19 @@ li {
   margin: 20px auto; /* Centraliza a linha horizontalmente e adiciona espaçamento vertical */
 }
 
+.academic-container {
+  display: flex;
+  flex-wrap: wrap; /* Quebra para a próxima linha em telas menores */
+  /* Adicione uma barra de rolagem horizontal para lidar com muitas imagens */
+}
+
+.academic-item {
+  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  height: auto; /* Isso garante que a altura seja ajustada proporcionalmente */
+  margin-right: 0; /* Espaçamento entre as imagens */
+  background-size: cover;
+  background-position: center;
+}
 
 .stack-item:last-child {
   margin-right: 0;
