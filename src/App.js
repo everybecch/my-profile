@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import './App.css';
 
+
 const experiences = [
   '/my-profile/assets/unimed.png',
   '/my-profile/assets/livelo.png',
@@ -46,7 +47,7 @@ const academic = [
 const images = [
   '/my-profile/every.jpg',
   '/my-profile/every2.jpg',
-  '/my-profile/every4.jpg'
+  '/my-profile/every4.jpg',
 ];
 
 const headerVariants = {
@@ -137,6 +138,8 @@ function App() {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
+
+
   const handleButtonClick = (sectionName) => {
     const sectionElement = document.getElementById(sectionName);
     if (sectionElement) {
@@ -200,6 +203,16 @@ function App() {
               onClick={() => handleButtonClick("experience")}
             >
               Contact
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              variants={textVariants}
+              onClick={() => {
+                window.open("https://github.com/everybecch", "_blank");
+              }}
+            >
+              GitHub
             </motion.button>
           </div>
         </section>
@@ -307,14 +320,14 @@ function App() {
           <h3>FORMAÇÃO / ACADEMIC</h3>
           <motion.div
             className="academic-container"
-            variants={academicContainerVariants} 
+            variants={academicContainerVariants}
             initial="initial"
             animate="animate"
           >
             {academic.map((academic, index) => (
               <motion.div
                 key={index}
-                className="academic-item" 
+                className="academic-item"
                 style={{
                   backgroundImage: `url(${academic})`,
                 }}

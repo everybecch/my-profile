@@ -158,15 +158,20 @@ li {
 
 .academic-container {
   display: flex;
-  flex-wrap: wrap; /* Quebra para a próxima linha em telas menores */
-  /* Adicione uma barra de rolagem horizontal para lidar com muitas imagens */
+  overflow-x: auto; /* Adicionado um overflow-x para rolagem horizontal */
+  width: 100%;
+  height: auto;
+  margin-bottom: 10;
+  justify-content: flex-start; /* Alinhe as imagens à esquerda */
 }
 
 .academic-item {
-  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
-  height: auto; /* Isso garante que a altura seja ajustada proporcionalmente */
-  margin-right: 0; /* Espaçamento entre as imagens */
-  background-size: cover;
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  margin-right: 30px; /* Remova ou ajuste conforme necessário */
+  background-size: contain; /* Altere para 'contain' */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
   background-position: center;
 }
 
@@ -182,6 +187,9 @@ li {
   margin-right: 0;
 }
 
+.academic-item:last-child {
+  margin-right: 0;
+}
 
 body {
   overflow-x: hidden; /* Impede a barra de rolagem lateral */
