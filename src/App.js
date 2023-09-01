@@ -38,9 +38,9 @@ const skills = [
 ];
 
 const academic = [
-  '/my-profile/src/unicid.png',
-  '/my-profile/src/4linux.png',
-  '/my-profile/src/udemy.png',
+  '/my-profile/assets/unicid.png',
+  '/my-profile/assets/4linux.png',
+  '/my-profile/assets/udemy.png',
 ];
 
 const images = [
