@@ -200,7 +200,7 @@ function App() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
-              onClick={() => handleButtonClick("experience")}
+              onClick={() => handleButtonClick("experience")} 
             >
               Contact
             </motion.button>
@@ -209,7 +209,7 @@ function App() {
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
               onClick={() => {
-                window.open("https://github.com/everybecch", "_blank"); // botaso para github
+                window.open("https://github.com/everybecch", "_blank"); // botao para github
               }}
             >
               GitHub
