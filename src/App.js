@@ -209,7 +209,7 @@ function App() {
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
               onClick={() => {
-                window.open("https://github.com/everybecch", "_blank");
+                window.open("https://github.com/everybecch", "_blank"); // botaso para github
               }}
             >
               GitHub
