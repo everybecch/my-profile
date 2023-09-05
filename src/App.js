@@ -209,7 +209,7 @@ function App() {
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
               onClick={() => {
-                window.open("https://github.com/everybecch", "_blank"); // add botao github profile-me
+                window.open("https://github.com/everybecch", "_blank"); // add botao for github profile-me
               }}
             >
               GitHub
