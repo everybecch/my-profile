@@ -41,7 +41,6 @@ function App() {
         </motion.h1>
       </header>
       <main>
-        {/* Restante do código */}
       </main>
     </div>
   );
