@@ -2,6 +2,29 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import './App.css';
 
+const contactIcons = [
+  {
+    icon: '/my-profile/assets/gmail.png',
+    link: 'mailto:everybby@gmail.com', // Substitua pelo seu endereço de e-mail
+    alt: 'E-mail Icon',
+  },
+  {
+    icon: '/my-profile/assets/linkedin.png',
+    link: 'https://www.linkedin.com/in/everton-santos-55038415a/', // Substitua pelo seu perfil do LinkedIn
+    alt: 'LinkedIn Icon',
+  },
+  {
+    icon: '/my-profile/assets/gihub.png',
+    link: 'https://github.com/everybecch', // Substitua pelo seu perfil do GitHub
+    alt: 'GitHub Icon',
+  },
+  {
+    icon: '/my-profile/assets/whatsapp.png',
+    link: 'https://wa.link/nojen5', // Substitua pelo seu perfil do GitHub
+    alt: 'GitHub Icon',
+  },
+];
+
 
 const experiences = [
   '/my-profile/assets/ph.png',
@@ -158,7 +181,7 @@ function App() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
-              onClick={() => handleButtonClick("experience")}
+              onClick={() => handleButtonClick("experiences")} 
             >
               Experience
             </motion.button>
@@ -174,7 +197,7 @@ function App() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
-              onClick={() => handleButtonClick("experience")}
+              onClick={() => handleButtonClick("contact")} 
             >
               Contact
             </motion.button>
@@ -196,7 +219,7 @@ function App() {
           initial="initial"
           animate="animate"
         >
-          SOBRE MIM / MY HISTORY  
+          SOBRE MIM / MY HISTORY
         </motion.h2>
         <div className="text-container">
           {/* Quadrado de texto em português */}
@@ -211,7 +234,7 @@ function App() {
                 fontSize: '16px',
               }}
             >
-              <h3>Portugues.</h3>
+              <h3>Português.</h3>
               "Everton Santos, reside na cidade de São Paulo especificamente na zona leste em Itaquera,
               começou sua carreira na tecnologia no ano de 2014 onde já prestava serviços corrigindo
               e reparando Hardwares e Softwares, ao longo do tempo foi obtendo experiência profissional
@@ -302,6 +325,7 @@ function App() {
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                   }}
+                  whileHover={{ scale: 1.05 }}
                 />
               ))}
             </div>
@@ -315,18 +339,42 @@ function App() {
             <div className="academic-container">
               {academic.map((academic, index) => (
                 <motion.div
-                key={index}
-                className="image-box"
-                style={{
-                  backgroundImage: `url(${academic})`,
-                  backgroundSize: 'contain',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                }}
-                whileHover={{ scale: 1.05 }}
-              />
+                  key={index}
+                  className="image-box"
+                  style={{
+                    backgroundImage: `url(${academic})`,
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                  }}
+                  whileHover={{ scale: 1.05 }}
+                />
               ))}
             </div>
+          </div>
+        </section>
+        <hr />
+
+        <section id="contact">
+          <h2>CONTATO / CONTACT</h2>
+          <div className="contact-icons">
+            {contactIcons.map((contact, index) => (
+              <a
+                key={index}
+                href={contact.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-icon" // Adicione a classe CSS para os ícones de contato
+              >
+                <img
+                  src={contact.icon}
+                  alt={contact.alt}
+                  title={contact.alt}
+                  width="40" // Defina a largura desejada
+                  height="40" // Defina a altura desejada
+                />
+              </a>
+            ))}
           </div>
         </section>
       </main>
