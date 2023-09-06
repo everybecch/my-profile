@@ -323,7 +323,7 @@ li {
 
   .text-box {
     flex: 3;
-    max-width: 200%; /* Reduzindo a largura para 90% da largura máxima */
+    max-width: 200%; /* Reduzindo a largura para 90% da largura máximaa*/
     max-height: 10%;
     padding: 20px;
     margin-right: 10px;
