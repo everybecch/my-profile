@@ -4,6 +4,7 @@ import './App.css';
 
 
 const experiences = [
+  '/my-profile/assets/ph.png',
   '/my-profile/assets/unimed.png',
   '/my-profile/assets/livelo.png',
   '/my-profile/assets/compasso.png',
@@ -42,6 +43,7 @@ const academic = [
   '/my-profile/assets/unicid.png',
   '/my-profile/assets/4linux.png',
   '/my-profile/assets/udemy.png',
+  '/my-profile/assets/twilioadv.png',
 ];
 
 const images = [
@@ -89,33 +91,6 @@ const stackContainerVariants = {
 
 
 
-const experienceContainerVariants = {
-  animate: {
-    x: ['-100%', '100%'], // Inverte a direção do movimento
-    transition: {
-      x: {
-        repeat: Infinity,
-        duration: 20,
-        ease: 'linear'
-      }
-    }
-  }
-};
-
-const academicContainerVariants = {
-  animate: {
-    x: ['100%', '-100%'], // Inverte a direção do movimento
-    transition: {
-      x: {
-        repeat: Infinity,
-        duration: 25,
-        ease: 'linear'
-      }
-    }
-  }
-};
-// .
-
 function App() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -156,7 +131,6 @@ function App() {
           alt="Foto de Perfil"
           className="profile-picture"
           variants={photoVariants}
-          initial="initial"
           animate="animate"
           onClick={handleImageClick}
         />
@@ -200,7 +174,7 @@ function App() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
-              onClick={() => handleButtonClick("experience")} 
+              onClick={() => handleButtonClick("experience")}
             >
               Contact
             </motion.button>
@@ -222,37 +196,55 @@ function App() {
           initial="initial"
           animate="animate"
         >
-          Minha História / My history
+          SOBRE MIM / MY HISTORY  
         </motion.h2>
-        <motion.div
-          key="sobre-text"
-          variants={textVariants}
-          initial="initial"
-          animate="animate"
-          exit="initial"
-          className="sobre-text"
-          style={{ fontFamily: 'Arial', fontSize: '16px', textAlign: 'center' }}
-        >
-          Everton Santos, reside na cidade de São Paulo especificamente na zona leste em Itaquera,
-          começou sua carreira na tecnologia no ano de 2014<br></br> onde já prestava serviços corrigindo
-          e reparando Hardwares e Softwares, ao longo do tempo foi obtendo experiência profissional<br></br>
-          e passando para outras áreas da tecnologia como analista de suporte,
-          analista de sistemas, segurança da informação<br></br> analista de infraestrutura e redes,
-          nesse meio tempo certificou-se em Linux, sistema operacional completo, em programação web<br></br> PHP com a Udemy,
-          até que um dia despertou interesse na área da programação e desenvolvimento, onde se destacou desenvolvendo<br></br> seu primeiro projeto de sucesso na carreira, um sistema de "Telecomunicação discagem automática", desde então iniciou-se<br></br> uma paixão pela criação e pelo mundo DEV, como já havia conhecimento em sistemas e cloud, se tornou um DevOps.
-          Ao todo sua carreira<br></br> soma 9 anos sendo 4 anos dedicados ao desenvolvimento.
+        <div className="text-container">
+          {/* Quadrado de texto em português */}
+          <div className="text-box portuguese-text">
+            <motion.div
+              key="sobre-text-portuguese"
+              variants={textVariants}
+              animate="animate"
+              exit="initial"
+              style={{
+                fontFamily: 'Arial',
+                fontSize: '16px',
+              }}
+            >
+              <h3>Portugues.</h3>
+              "Everton Santos, reside na cidade de São Paulo especificamente na zona leste em Itaquera,
+              começou sua carreira na tecnologia no ano de 2014 onde já prestava serviços corrigindo
+              e reparando Hardwares e Softwares, ao longo do tempo foi obtendo experiência profissional
+              e passando para outras áreas da tecnologia como analista de suporte,
+              analista de sistemas, segurança da informação analista de infraestrutura e redes,
+              nesse meio tempo certificou-se em Linux, sistema operacional completo, em programação web PHP com a Udemy,
+              até que um dia despertou interesse na área da programação e desenvolvimento,
+              onde se destacou desenvolvendo seu primeiro projeto de sucesso na carreira, um sistema de "Telecomunicação discagem automática"
+              desde então iniciou-se uma paixão pela criação e pelo mundo DEV, como já havia conhecimento em sistemas e cloud, se tornou um DevOps.
+              Ao todo sua carreira soma 9 anos sendo 4 anos dedicados ao desenvolvimento.
+              <br></br>
+              <br></br>
+              Esse é um pedaço da minha história. Agradeço pela leitura e conto com você para continuar
+              construindo as paginas do meu livro."
+            </motion.div>
+          </div>
+          <div className="text-box english-text">
+            <motion.div
+              key="sobre-text-english"
+              variants={textVariants}
+              animate="animate"
+              exit="initial"
+              style={{
+                fontFamily: 'Arial',
+                fontSize: '16px',
+              }}
+            >
+              <h3>English.</h3>
 
-          Esse é um pedaço da minha história. Agradeço pela leitura<br></br> e conto com você para continuar
-          construindo as paginas do meu livro.
-
-          <br></br><h3>English.</h3>
-
-          "Everton Santos lives in the city of São Paulo, specifically in the eastern zone of São Paulo in Itaquera. He began his career in technology in 2014,<br></br> where he was already providing services in hardware and software troubleshooting and repair. Over time, he gained professional experience and transitioned<br></br>to other areas of technology, such as support analyst, systems analyst, information security, infrastructure and network analyst.<br></br> During this time, he obtained a complete certification in Linux operating systems and PHP programming through Udemy.
-
-          One day, <br></br> he developed a keen interest in programming and software development, which led to his standout success in his first career project: <br></br> an automatic dialing telecom system. This marked the beginning of his passion for creation and the world of development.<br></br> With his knowledge in systems and cloud technologies, he became a DevOps professional. In total, his career spans nine years,<br></br> with four dedicated to development.
-
-          This is a part of my story. Thank you for reading, and I look forward to continuing to build the pages of my book. After all, <br></br>those of us who love technology are adventurers who never stop in time; we move alongside the ever-evolving world of technology."
-        </motion.div>
+              "Everton Santos resides in the city of São Paulo, specifically in the eastern zone in Itaquera. He began his career in technology in the year 2014, where he was already providing services by troubleshooting and repairing hardware and software. Over time, he gained professional experience and transitioned to other areas of technology, such as support analyst, systems analyst, information security analyst, infrastructure and network analyst. During this time, he obtained certification in Linux, a complete operating system, and PHP web programming through Udemy.One day, he developed a keen interest in programming and software development, where he excelled by creating his first successful project in his career, an "Automatic Dialing Telecommunication" system. Since then, he has developed a passion for creation and the world of development. With his knowledge of systems and cloud technologies, he became a DevOps professional. In total, his career spans 9 years, with 4 years dedicated to development."
+            </motion.div>
+          </div>
+        </div>
         <hr />
         <section id="skills">
           <h2>HABILIDADES / SKILLS</h2>
@@ -297,43 +289,45 @@ function App() {
         </section>
         <hr />
         <section id="experiences">
-          <h2>EXPERIENCE / EXPERIÊNCIAS</h2>
-          <motion.div
-            className="experiences-container"
-            variants={experienceContainerVariants}
-            initial="initial"
-            animate="animate"
-          >
-            {experiences.map((experience, index) => (
-              <motion.div
-                key={index}
-                className="experiences-item"
-                style={{
-                  backgroundImage: `url(${experience})`,
-                }}
-              />
-            ))}
-          </motion.div>
+          <h2>EXPERIÊNCIAS / EXPERIENCE</h2>
+          <div className="text-container">
+            <div className="experiences-container">
+              {experiences.map((experience, index) => (
+                <div
+                  key={index}
+                  className="image-box"
+                  style={{
+                    backgroundImage: `url(${experience})`,
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                  }}
+                />
+              ))}
+            </div>
+          </div>
         </section>
         <hr />
+
         <section id="academic">
-          <h3>FORMAÇÃO / ACADEMIC</h3>
-          <motion.div
-            className="academic-container"
-            variants={academicContainerVariants}
-            initial="initial"
-            animate="animate"
-          >
-            {academic.map((academic, index) => (
-              <motion.div
+          <h2>FORMAÇÃO / ACADEMIC / COURSES</h2>
+          <div className="text-container">
+            <div className="academic-container">
+              {academic.map((academic, index) => (
+                <motion.div
                 key={index}
-                className="academic-item"
+                className="image-box"
                 style={{
                   backgroundImage: `url(${academic})`,
+                  backgroundSize: 'contain',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
                 }}
+                whileHover={{ scale: 1.05 }}
               />
-            ))}
-          </motion.div>
+              ))}
+            </div>
+          </div>
         </section>
       </main>
     </div>

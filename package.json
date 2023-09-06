@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "framer-motion": "^10.16.2",
+    "framer-motion": "^10.16.4",
     "gh-pages": "^5.0.0"
   }
 }

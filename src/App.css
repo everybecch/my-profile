@@ -15,6 +15,44 @@
   z-index: 1;
 }
 
+.image-box {
+  width: 200px; /* Largura fixa para as caixas de imagem */
+  height: 200px; /* Altura fixa para as caixas de imagem */
+  background-size: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adicione uma sombra flutuante */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Centralize horizontalmente e verticalmente */
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between; /* Alinhar os quadrados à esquerda e à direita */
+  gap: 10px; /* Espaçamento entre os quadrados */
+  margin-bottom: 10px;
+}
+
+/* Estilos para os quadrados de texto em português e inglês */
+.text-box {
+  flex: 2;
+  padding: 30px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  max-width: 700px; /* Reduza o valor do max-width para tornar os quadrados mais largos */
+}
+
+/* Estilos para o texto em português */
+.portuguese-text {
+  text-align: left;
+}
+
+/* Estilos para o texto em inglês */
+.english-text {
+  text-align: right;
+}
 
 h1 {
   margin: 0;
@@ -97,22 +135,6 @@ li {
   background-color: white; /* Altera o fundo da seção Skills para branco */
 }
 
-.experiences-container {
-  display: flex;
-  overflow-x: hidden;
-  width: 100%;
-  height: auto; /* Altere para um valor maior */
-  margin-bottom: 0; /* Remova o espaço abaixo das imagens */
-}
-
-.experiences-item {
-  flex-shrink: auto ;
-  width: 150px; /* Ajuste o tamanho das imagens conforme necessário */
-  height: 150px; /* Ajuste o tamanho das imagens conforme necessário */
-  margin-right: 30px; /* Espaço entre as imagens */
-  background-size: cover;
-  background-position: center;
-}
 
 .skills-container {
   display: flex;
@@ -156,24 +178,39 @@ li {
   margin: 20px auto; /* Centraliza a linha horizontalmente e adiciona espaçamento vertical */
 }
 
+.experiences-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Alinhe os quadrados de imagem no centro horizontalmente */
+  align-items: center; /* Centralize verticalmente os quadrados de imagem */
+  gap: 20px; /* Espaçamento entre as imagens */
+  margin: 0 auto; /* Centralize a seção horizontalmente */
+  max-width: 1200px; /* Ajuste o valor conforme necessário */
+}
+
+.experiences-item {
+  width: 200px; /* Largura fixa para as imagens */
+  height: 200px; /* Altura fixa para as imagens */
+  background-size: cover;
+  background-position: center;
+}
+
 .academic-container {
   display: flex;
-  overflow-x: auto; /* Adicionado um overflow-x para rolagem horizontal */
-  width: 100%;
-  height: auto;
-  margin-bottom: 10;
-  justify-content: flex-start; /* Alinhe as imagens à esquerda */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 auto;
+  gap: 20px;
+  max-width: 1200px;
 }
 
 .academic-item {
-  flex-shrink: 0;
-  width: 140px;
-  height: 140px;
-  margin-right: 30px; /* Remova ou ajuste conforme necessário */
-  background-size: contain; /* Altere para 'contain' */
-  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  width: 200px; /* Largura fixa para as imagens */
+  height: 200px; /* Altura fixa para as imagens */
   background-position: center;
 }
+
 
 .stack-item:last-child {
   margin-right: 0;
@@ -277,12 +314,6 @@ body {
       flex-wrap: wrap;
     }
   
-    .experience-item {
-      width: 80px;
-      height: 80px;
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
   }
   
 
