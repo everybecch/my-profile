@@ -277,6 +277,29 @@ li {
   margin-right: 0;
 }
 
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column; /* Coloque os itens verticalmente */
+  }
+
+  .profile-picture {
+    margin-top: 20px; /* Adicione espaço entre os botões e a imagem */
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container,
+  .stack-container {
+    flex-wrap: wrap; /* Coloque os itens em várias linhas */
+  }
+
+  .skill-item,
+  .stack-item {
+    width: 100%; /* Faça com que cada item ocupe toda a largura disponível */
+    max-width: none; /* Remova a largura máxima */
+  }
+}
+
 /* Responsivo para dispositivos móveis */
 @media (max-width:600px) {
   .profile-picture {

@@ -147,7 +147,7 @@ function App() {
 
   return (
     <div className="App">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <div className="background-animation" />
       <header className="App-header">
         <motion.img
@@ -182,7 +182,7 @@ function App() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
-              onClick={() => handleButtonClick("experiences")} 
+              onClick={() => handleButtonClick("experiences")}
             >
               Experience
             </motion.button>
@@ -198,7 +198,7 @@ function App() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               variants={textVariants}
-              onClick={() => handleButtonClick("contact")} 
+              onClick={() => handleButtonClick("contact")}
             >
               Contact
             </motion.button>
