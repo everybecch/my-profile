@@ -20,7 +20,6 @@
   background-color: rgba(0, 0, 0, 0.5); /* Cor do polegar ao passar o mouse com mais transparência */
 }
 
-
 body {
   overflow-x: hidden !important;
 }
@@ -227,7 +226,6 @@ li {
   height: 110px;
   margin-right: 20px;
   background-size: cover;
-  background-position: center;
 }
 
 .stack-item:last-child,
